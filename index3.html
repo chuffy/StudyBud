@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>StudyMe </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style>
+
+      .header {
+        font-size: 40pt;
+        font-family: 'Pacifico', cursive;
+        color: #fff;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      a.card-link {
+        color: #000;
+      }
+
+      h1 {
+        color: #DB2323;
+      }
+
+      i span {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      font-size: 10px;
+      }
+
+      i:hover span {
+        display: block;
+      }
+
+
+      #main {
+      }
+
+      #navbar {
+        padding-left: 2%;
+        padding-top: 1%;
+        background-color: #3B578E;
+        height: 100vh;
+        overflow-y: auto;
+      }
+
+      #content {
+        background-color: #F7F9FF;
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+
+      .courseCard {
+        background: #fff;
+        border-color: #BDBDBD;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        margin-top: 25px;
+      }
+
+      .courseBody {
+        padding: 20px;
+      }
+
+      .gradeText {
+        font-size: 65px;
+      }
+
+      .expCourseCard {
+        background: #c9c9c9;
+        border-color: #BDBDBD;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        margin-top: 25px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--Nav Bar-->
+        <div class="col-sm-2" id="navbar">
+          <div class="header">StudyBud</div>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                 <a class="nav-link" href="#">Assignments</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">My Profile</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Courses</a>
+               </li>
+             </ul>
+        </div>
+
+
+        <!--Content-->
+        <div class="col-sm-10" id="content">
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Fitness and Health Module</h1>
+            </div>
+          </div>
+
+          <!-- first assignment-->
+          <div class="row">
+            <div class="col-sm-10">
+              <h2>Current Assignments:</h2>
+                <div class="courseCard">
+                  <div class="courseBody row">
+                  <div class="col-sm-8">
+                    <h5 class="card-title">Assignment 3: Cardiovascular </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">An assignment to explain the effects of cardio on muscle tearing</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+
+                  <div class="col-sm-4" style="display: flex; justify-content: flex-end;">
+                    <span class="fas fa-check fa-6x"></span>
+                    <span class="fas fa-exclamation fa-6x" style="color: #ff3d5a; padding-left: 50px;"></span>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+
+        <!-- second assignment-->
+      <div class="row">
+        <div class="col-sm-10">
+            <div class="courseCard">
+              <div class="courseBody row">
+              <div class="col-sm-8">
+                <h5 class="card-title">Assignment 4: Anatomy of Leg muscles  </h5>
+                <h6 class="card-subtitle mb-2 text-muted">Find research to explain which muscles are the most important for sprinting</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+
+              <div class="col-sm-4" style="display: flex; justify-content: flex-end;">
+                <i class="fas fa-times-circle fa-6x"><span>hey man</span></i>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+      <!-- expired assignment-->
+      <div class="row">
+        <div class="col-sm-10">
+          <h2 style="margin-top: 25px;">Expired Assignments:</h2>
+            <div class="expCourseCard">
+              <div class="courseBody row">
+              <div class="col-sm-8">
+                <h5 class="card-title">Assignment 3: Cardiovascular </h5>
+                <h6 class="card-subtitle mb-2 text-muted">An assignment to explain the effects of cardio on muscle tearing</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+
+              <div class="col-sm-4" style="display: flex; justify-content: flex-end;">
+                <span class="gradeText">95%</span>
+                <span class="fas fa-exclamation fa-6x" style="color: #ff3d5a; padding-left: 30px;"></span>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+      </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
