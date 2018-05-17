@@ -109,7 +109,7 @@
           <div class="header">StudyBud</div>
             <ul class="nav flex-column">
               <li class="nav-item">
-                 <a class="nav-link" href="assignments.html">Assignments</a>
+                 <a class="nav-link" href="#">Assignments</a>
                </li>
                <li class="nav-item">
                  <a class="nav-link" href="#">My Profile</a>
