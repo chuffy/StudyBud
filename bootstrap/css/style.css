@@ -1,0 +1,80 @@
+.header {
+  font-size: 35pt;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+}
+
+body {
+  background-color: #F7F9FF;
+}
+
+a {
+  color: #fff;
+  font-size: 19px;
+}
+
+a.card-link {
+  color: #000;
+}
+
+h1 {
+  color: #201c44;
+  padding-left: 30px;
+}
+
+i span {
+display: none;
+position: absolute;
+bottom: 0;
+width: 100%;
+padding: 10px;
+font-size: 10px;
+}
+
+i:hover span {
+  display: block;
+}
+
+#iframecontent {
+}
+
+
+#navbar {
+  padding-left: 1.5%;
+  padding-top: 1%;
+  background-color: #3B578E;
+  min-height: 100vh;
+  height: max;
+  overflow-y: auto;
+}
+
+#content {
+  padding-top: 1%;
+}
+
+
+.courseCard {
+  background: #fff;
+  border-color: #BDBDBD;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.courseBody {
+  padding: 20px;
+}
+
+.gradeText {
+  font-size: 65px;
+}
+
+.expCourseCard {
+  background: #c9c9c9;
+  border-color: #BDBDBD;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 25px;
+}

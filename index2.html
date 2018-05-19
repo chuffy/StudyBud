@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>StudyMe </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="./bootstrap/css/style.css" rel="stylesheet">
+    <link href="./bootstrap/css/chat.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!--Nav Bar-->
+        <div class="col-sm-2" id="navbar">
+          <div class="header">StudyBud</div>
+            <br>
+            <div class="align-items-center">
+              <img src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" height="150px" style="padding-left: 30px">
+          </div>
+            <br>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                 <a class="nav-link" href="index.html" target="content_module"><span class="fas fa-home"></span> Home</a>
+               </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="assignments.html" target="content_module"><span class="fas fa-edit"></span> Assignments</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#"><span class="fas fa-book"></span> Courses</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#"><span class="fas fa-user-circle"></span> My Profile</a>
+               </li>
+             </ul>
+        </div>
+
+
+        <!--Content-->
+        <div class="col-sm-10" id="content">
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Fitness and Health Module</h1>
+            </div>
+          </div>
+
+          <!--iFrame for content-->
+          <div class="col-lg-12 my-3">
+  		        <iframe style="border:none;" height="800px" width="100%" src="index.html" name="content_module"></iframe>
+          </div>
+        </div>
+
+
+
+        </div>
+      </div>
+
+
+
+          <div class="container-fluid">
+      	<div class="row" id="notif">
+            <div class="col-md-4 col-md-offset-4">
+              <div class="material-button-anim">
+                <ul class="list-inline" id="options">
+                  <li class="option">
+                    <button class="material-button option1" type="button">
+                      <span class="fa fa-phone" aria-hidden="true"></span>
+                    </button>
+                  </li>
+                  <li class="option">
+                    <button class="material-button option2" type="button">
+                      <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                    </button>
+                  </li>
+                  <li class="option">
+                    <button class="material-button option3" type="button">
+                      <span class="fa fa-pencil" aria-hidden="true"></span>
+                    </button>
+                  </li>
+                </ul>
+                <button class="material-button material-button-toggle" type="button">
+                  <span class="fa fa-plus" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+      	</div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        $('.material-button-toggle').on("click", function () {
+            $(this).toggleClass('open');
+            $('.option').toggleClass('scale-on');
+        });
+    });
+  </script>
+  </body>
+
+</html>
