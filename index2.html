@@ -77,28 +77,37 @@
 
 
         <div class="row" id="notif">
-            <button id="notifBtn" onclick="toggler()" class="material-button option1"><span class="fa fa-bell fa-1x"></span> 2</button>
+            <button id="notifBtn" onclick="toggler()" class="material-button option1"><span class="fa fa-bell fa-1x"></span> <span id="notifNum">2</span></button>
         </div>
 
         <div class="row" id="chat">
-            <button id="chatBtn" class="material-button option1"><span class="fa fa-comments fa-1x"></span></button>
+            <button id="chatBtn" onclick="togglerChat()" class="material-button option1"><span class="fa fa-comments fa-1x"></span></button>
       	</div>
 
         <div id="notifExpanded">
           <div class="alert alert-info">
-              <strong>Info!</strong> Indicates a neutral informative change or action.
+              <strong>New Message!</strong> Your team member Bob messaged you!
             </div>
 
-            <div class="alert alert-info">
-                <strong>Info!</strong> Indicates a neutral informative change or action.
+            <div class="alert alert-success">
+                <strong>New Feedback:</strong> You have new feedback from a teammate!
               </div>
         </div>
+
+        <span id="chatWindow">
+          <img src="chat.png" height="50%">
+        </span>
       </div>
 
     <script>
     function toggler(){
-          $('#notifExpanded').fadeToggle("slow", "linear");
+          $('#notifExpanded').fadeToggle("fast", "linear");
+          $('#notifNum').fadeOut("slow", "linear");
       }
+
+    function togglerChat() {
+          $('#chatWindow').fadeToggle("fast", "linear");
+    }
       </script>
 
 

@@ -84,6 +84,13 @@ i:hover span {
     right: 50px;
 }
 
+#chatWindow {
+  position: fixed;
+  right: 130px;
+  bottom: 20px;
+  display: none;
+}
+
 #notifExpanded {
   position: absolute;
   bottom: 100px;
@@ -101,6 +108,18 @@ i:hover span {
   margin-top: 25px;
 }
 
+#course1 {
+  background-image: url("../../cardio.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#course2 {
+  background-image: url("../../sprint.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 .courseBody {
   padding: 20px;
 }
@@ -111,6 +130,9 @@ i:hover span {
 
 .expCourseCard {
   background: #c9c9c9;
+  background-image: url("../../bench.png");
+  background-repeat: no-repeat;
+  background-position: right;
   border-color: #BDBDBD;
   border-style: solid;
   border-width: 1px;
