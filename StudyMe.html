@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///D:/Uni/COMPSCI345/A3/Assignment%203/StudyBud/index2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>StudyMe </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./StudyMe_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./StudyMe_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./StudyMe_files/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="./StudyMe_files/style.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./StudyMe_files/jquery.min.js.download"></script>
+    <script src="./StudyMe_files/bootstrap.bundle.min.js.download"></script>
+
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!--Nav Bar-->
+        <div class="col-sm-2" id="navbar">
+          <div class="header">StudyBud</div>
+            <br>
+            <div class="align-items-center">
+              <img src="./StudyMe_files/user-2517433_960_720.png" height="150px" style="padding-left: 70px">
+          </div>
+            <br>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                 <a class="nav-link" href="file:///D:/Uni/COMPSCI345/A3/Assignment%203/StudyBud/index.html" target="content_module" id="home_link" onclick="toggleMenu1()"><span class="fas fa-home" style="padding-right: 15px;"></span>Home</a>
+               </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="file:///D:/Uni/COMPSCI345/A3/Assignment%203/StudyBud/assignments.html" target="content_module" id="ass_link" onclick="toggleMenu2()"><span class="fas fa-edit" style="padding-right: 15px"></span>Assignments</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="file:///D:/Uni/COMPSCI345/A3/Assignment%203/StudyBud/index2.html#"><span class="fas fa-book" style="padding-right: 15px"></span> Courses</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="file:///D:/Uni/COMPSCI345/A3/Assignment%203/StudyBud/index2.html#"><span class="fas fa-user-circle" style="padding-right: 15px"></span> My Profile</a>
+               </li>
+             </ul>
+        </div>
+
+
+        <!--Content-->
+        <div class="col-sm-10" id="content">
+
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>Fitness and Health Module</h1>
+            </div>
+          </div>
+
+          <!--iFrame for content-->
+          <div class="col-lg-12 my-3">
+  		        <iframe style="border:none;" height="800px" width="100%" src="./StudyMe_files/index.html" name="content_module"></iframe>
+          </div>
+        </div>
+
+
+
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid">
+
+
+        <div class="row" id="chat">
+            <button id="chatBtn" onclick="toggleFunction()" class="material-button option1"><span class="fa fa-bell fa-1x"></span></button>
+        </div>
+
+        <div class="row" id="notif">
+            <button id="notifBtn" onclick="toggler()" class="material-button option1"><span class="fa fa-comments fa-1x"></span></button>
+      	</div>
+
+        <div id="notifExpanded">
+          <div class="alert alert-info">
+              <strong>Info!</strong> Indicates a neutral informative change or action.
+            </div>
+        </div>
+      </div>
+
+      <button id="notifBtn2">Click to fade in/out boxes</button><br><br>
+
+      <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+      <br>
+      <div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+      <br>
+      <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+
+    <!-- Toggle hide/show an element taken and modified from w3schools https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp-->
+
+    <script>
+    var x = document.getElementById("notifExpanded");
+
+      function toggleFunction() {
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+          }
+        }
+    </script>
+
+    <script>
+    function toggler(){
+          $('#notifExpanded').fadeToggle("slow", "linear");
+      }
+  </script>
+
+
+    <!--Nav bar change background for appropriate link, inspired by above code-->
+      <script>
+        function toggleMenu1() {
+            var e = document.getElementById("home_link");
+            var c = window.getComputedStyle(e).backgroundColor;
+            if (c === "rgb(59, 87, 142)") {
+            document.getElementById("home_link").style.background = "#25427A";
+            document.getElementById("home_link").style.borderLeft = "4px solid #899EC7";
+            toggleMenu2();
+        } else{
+            document.getElementById("home_link").style.background = "#3B578E";
+            document.getElementById("home_link").style.borderLeft = "none";
+          }
+        }
+
+        function toggleMenu2() {
+            var e = document.getElementById("ass_link");
+            var c = window.getComputedStyle(e).backgroundColor;
+            if (c === "rgb(59, 87, 142)") {
+            document.getElementById("ass_link").style.background = "#25427A";
+            document.getElementById("ass_link").style.borderLeft = "4px solid #899EC7";
+            toggleMenu1();
+        } else{
+            document.getElementById("ass_link").style.background = "#3B578E";
+            document.getElementById("ass_link").style.borderLeft = "none";
+          }
+        }
+    </script>
+  
+
+
+</body></html>

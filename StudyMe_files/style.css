@@ -19,7 +19,7 @@ a.card-link {
 }
 
 h1 {
-  color: #db2323;
+  color: #201c44;
   padding-left: 30px;
 }
 
@@ -70,14 +70,14 @@ i:hover span {
   padding-top: 1%;
 }
 
-#chat{
+#notif {
     padding-top: 50px;
     position: fixed;
     bottom: 20px;
     right: 50px;
 }
 
-#notif {
+#chat {
     padding-top: 50px;
     position: fixed;
     bottom: 110px;
@@ -86,9 +86,8 @@ i:hover span {
 
 #notifExpanded {
   position: absolute;
-  bottom: 100px;
-  right: 130px;
-  display: none;
+  bottom: 80px;
+  right: 20px;
 }
 
 

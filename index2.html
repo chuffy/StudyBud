@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="./bootstrap/css/style.css" rel="stylesheet">
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="./jquery/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
   </head>
 
   <body>
@@ -26,21 +31,21 @@
           <div class="header">StudyBud</div>
             <br>
             <div class="align-items-center">
-              <img src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" height="150px" style="padding-left: 30px">
+              <img src="https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433_960_720.png" height="150px" style="padding-left: 70px">
           </div>
             <br>
             <ul class="nav flex-column">
               <li class="nav-item">
-                 <a class="nav-link" href="index.html" target="content_module"><span class="fas fa-home"></span> Home</a>
+                 <a class="nav-link" href="index.html" target="content_module" id="home_link" onclick="toggleMenu1()"><span class="fas fa-home" style="padding-right: 15px;"></span>Home</a>
                </li>
               <li class="nav-item">
-                  <a class="nav-link active" href="assignments.html" target="content_module"><span class="fas fa-edit"></span> Assignments</a>
+                  <a class="nav-link active" href="assignments.html" target="content_module" id="ass_link" onclick="toggleMenu2()"><span class="fas fa-edit" style="padding-right: 15px"></span>Assignments</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="#"><span class="fas fa-book"></span> Courses</a>
+                 <a class="nav-link" href="#"><span class="fas fa-book" style="padding-right: 15px"></span> Courses</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="#"><span class="fas fa-user-circle"></span> My Profile</a>
+                 <a class="nav-link" href="#"><span class="fas fa-user-circle" style="padding-right: 15px"></span> My Profile</a>
                </li>
              </ul>
         </div>
@@ -69,33 +74,62 @@
 
 
       <div class="container-fluid">
-      	<div class="row" id="notif">
-            <button onclick="toggleFunction()" class="material-button option1"><span class="fa fa-envelope fa-1x"></span></button>
+
+
+        <div class="row" id="notif">
+            <button id="notifBtn" onclick="toggler()" class="material-button option1"><span class="fa fa-bell fa-1x"></span> 2</button>
+        </div>
+
+        <div class="row" id="chat">
+            <button id="chatBtn" class="material-button option1"><span class="fa fa-comments fa-1x"></span></button>
       	</div>
 
         <div id="notifExpanded">
           <div class="alert alert-info">
               <strong>Info!</strong> Indicates a neutral informative change or action.
             </div>
+
+            <div class="alert alert-info">
+                <strong>Info!</strong> Indicates a neutral informative change or action.
+              </div>
         </div>
       </div>
 
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="./jquery/jquery.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Toggle hide/show an element taken and modified from w3schools https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp-->
     <script>
-    var x = document.getElementById("notifExpanded");
-    x.style.display = "none";
-      function toggleFunction() {
-          if (x.style.display === "none") {
-              x.style.display = "block";
-          } else {
-              x.style.display = "none";
-          }
+    function toggler(){
+          $('#notifExpanded').fadeToggle("slow", "linear");
       }
-  </script>
+      </script>
+
+
+    <!--Nav bar change background for appropriate link, inspired by above code-->
+      <script>
+        function toggleMenu1() {
+            var element = document.getElementById("home_link");
+            var colour = window.getComputedStyle(element).backgroundColor;
+            if (colour === "rgb(59, 87, 142)") {
+            document.getElementById("home_link").style.background = "#25427A";
+            document.getElementById("home_link").style.borderLeft = "4px solid #899EC7";
+            toggleMenu2();
+        } else{
+            document.getElementById("home_link").style.background = "#3B578E";
+            document.getElementById("home_link").style.borderLeft = "none";
+          }
+        }
+
+        function toggleMenu2() {
+            var element = document.getElementById("ass_link");
+            var colour = window.getComputedStyle(element).backgroundColor;
+            if (colour === "rgb(59, 87, 142)") {
+            document.getElementById("ass_link").style.background = "#25427A";
+            document.getElementById("ass_link").style.borderLeft = "4px solid #899EC7";
+            toggleMenu1();
+        } else{
+            document.getElementById("ass_link").style.background = "#3B578E";
+            document.getElementById("ass_link").style.borderLeft = "none";
+          }
+        }
+    </script>
   </body>
 
 </html>
