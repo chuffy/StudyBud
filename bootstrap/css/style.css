@@ -124,6 +124,17 @@ i:hover span {
   padding: 20px;
 }
 
+#ass_doc {
+  background: #fff;
+  border-color: #BDBDBD;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
 .gradeText {
   font-size: 65px;
 }
